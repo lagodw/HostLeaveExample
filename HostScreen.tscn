@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://components/Button/Button.tscn" type="PackedScene" id=1]
+[ext_resource path="res://HostScreen.gd" type="Script" id=5]
+
+[node name="HostScreen" type="CanvasLayer"]
+script = ExtResource( 5 )
+
+[node name="LobbyName" type="Label" parent="."]
+margin_left = 386.0
+margin_top = 161.0
+margin_right = 608.0
+margin_bottom = 237.0
+
+[node name="MainMenu" parent="." instance=ExtResource( 1 )]
+margin_left = 151.0
+margin_top = 310.0
+margin_right = -166.0
+margin_bottom = 366.0
+text = "Main Menu"
